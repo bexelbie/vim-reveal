@@ -25,6 +25,7 @@
                 backgroundTransition: '{% backgroundTransition %}',
                 // Optional libraries used to extend on reveal.js
                 dependencies: [
+                    {% dependencies %}
                     { src: '{% revealWebPath %}lib/js/classList.js', condition: function() { return !document.body.classList; } },
                     { src: '{% revealWebPath %}plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
                     { src: '{% revealWebPath %}plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
